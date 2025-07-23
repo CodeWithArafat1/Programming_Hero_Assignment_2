@@ -16,7 +16,7 @@
     <title>Assignment 2</title>
   </head>
   <body>
-    <nav class="px-1">
+    <nav class="">
       <div class="flex items-center justify-between container mx-auto px-1">
         <div class="">
           <img src="./assets/logo.png" alt="" class="w-24" />
@@ -31,26 +31,28 @@
             ><i class="ri-shopping-cart-2-line text-xl"></i> cart ($56)</a
           >
         </div>
-        <a href="#" class="md:hidden"
-          ><i class="ri-shopping-cart-2-line text-xl"></i> cart ($56)</a
-        >
+        <div class="md:hidden">
+          <a href="#"
+            ><i class="ri-shopping-cart-2-line text-xl"></i> cart ($56)</a
+          >
+        </div>
       </div>
     </nav>
 
     <!-- hero secton start -->
 
     <main
-      class="container mx-auto grid grid-cols-1 md:grid-cols-2 place-items-center h-[90vh] px-1"
+      class="container mx-auto grid grid-cols-1 md:grid-cols-2 place-items-center h-[90vh] md:px-1"
     >
-      <div class="flex flex-col gap-5 order-2 md:order-none">
-        <h1 class="lg:text-6xl text-4xl font-bold">
+      <div class="flex flex-col gap-5 order-2 md:order-none px-1">
+        <h1 class="lg:text-5xl text-4xl font-bold">
           ALWAYS
           <span class="text-orange-600"
             >FRESH <br />
             FLOWERS</span
           >
         </h1>
-        <p class="text-xl text-gray-600">
+        <p class="text-md md:text-xl text-gray-600">
           Indulge your senses with the beauty and fragrance of our fresh flower
           shop. From classic roses to exotic blooms, we offer a wide variety of
           fresh flowers that are perfect for any occasion.
@@ -65,10 +67,10 @@
 
     <section class="container mx-auto px-1">
       <div class="text-center flex flex-col gap-5">
-        <h1 class="text-6xl font-bold">
+        <h1 class="md:text-5xl text-4xl font-bold">
           <span class="text-orange-600">Our</span> Plants
         </h1>
-        <p class="text-xl text-gray-600">
+        <p class="text-md md:text-xl text-gray-600">
           Indulge your senses with the beauty and fragrance of our fresh flower
           shop. From classic roses to exotic blooms, we offer a wide variety of
           fresh.
@@ -241,7 +243,7 @@
             <img
               src="./assets/trusted-badge.png"
               alt="Trusted Badge"
-              class="w-32 md:w-48 absolute -top-12 -right-6 md:-top-20 md:-right-20 z-10"
+              class="w-32 md:w-40 absolute -top-12 -right-6 md:-top-15 md:-right-10 z-10"
             />
           </figure>
         </div>
@@ -270,5 +272,148 @@
         </div>
       </div>
     </section>
+
+    <section class="container mx-auto px-1 mb-20">
+      <div class="text-center flex flex-col gap-4 my-20">
+        <h1 class="text-4xl md:text-5xl font-bold">
+          <span class="text-orange-600">Latest</span> Deals
+        </h1>
+        <p class="text-md md:text-xl text-gray-600">
+          Indulge your senses with the beauty and fragrance of our fresh flower
+          shop. From classic roses to exotic blooms, we offer a wide variety of
+          fresh.
+        </p>
+      </div>
+
+      <div class="md:flex justify-center items-center gap-5">
+        <div class="">
+          <div class="flex flex-col gap-5 mb-4 md:mb-0">
+            <div class="relative">
+              <img
+                src="./assets/deal-bloom.png"
+                alt=""
+                class="w-full rounded-xl h-60 bg-cover md:h-auto"
+              />
+
+              <div
+                class="absolute flex flex-col justify-center items-center inset-0  gap-2 bg-black/45 text-white rounded-xl"
+              >
+                <h3 class="text-xl">60% Off | Bloom Plant</h3>
+
+                <a href="#" class="underline">Shop Now</a>
+              </div>
+            </div>
+
+            <div class="relative">
+              <img
+                src="./assets/deal-ana.png"
+                alt=""
+                class="w-full rounded-xl h-60 bg-cover md:h-auto"
+              />
+
+              <div
+                class="absolute flex flex-col justify-center items-center inset-0  gap-2 bg-black/45 text-white rounded-xl"
+              >
+                <h3 class="text-xl">30% Off | Ana Plant</h3>
+
+                <a href="#" class="underline">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="relative">
+            <img
+              src="./assets/deal-zabo.png"
+              alt=""
+              class="w-full rounded-xl"
+            />
+
+            <div
+              class="absolute flex flex-col justify-center items-center inset-0  gap-2 bg-black/50 text-white rounded-xl"
+            >
+              <h3 class="text-xl">25% Off | Zabo Plant</h3>
+
+              <a href="#" class="underline">Shop Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscribe Section start -->
+    <section
+      class="relative bg-cover bg-center h-80 md:h-96 flex items-center justify-center text-white"
+      style="background-image: url('./assets/news-letter-bg.png')"
+    >
+      <div class="text-center px-4 w-full max-w-2xl">
+        <h1 class="text-3xl md:text-4xl font-bold mb-6">
+          Join the colorful Bunch
+        </h1>
+        <form class="flex items-center justify-center md:gap-0">
+          <input
+            type="email"
+            placeholder="Write email"
+            class="px-4 py-2 rounded-l-md w-full md:w-2/3 text-gray-800 outline-0 border border-orange-600 bg-white"
+          />
+          <button
+            class="bg-orange-600 text-white px-6 py-2 rounded-r-md hover:bg-orange-700 transition"
+          >
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-white text-gray-700 py-10 container mx-auto px-2">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-start"
+      >
+        <div class="space-y-4">
+          <div class="flex items-center gap-2">
+            <img src="./assets/logo.png" alt="logo" class="w-24" />
+          </div>
+          <p class="text-sm">
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop.
+          </p>
+        </div>
+
+        <!-- Links -->
+
+        <div class="flex flex-col">
+          <a href="#" class="hover:underline">Home</a>
+          <a href="#" class="hover:underline">About Us</a>
+          <a href="#" class="hover:underline">Blog</a>
+          <a href="#" class="hover:underline">FAQ</a>
+          <a href="#" class="hover:underline">Contact Us</a>
+        </div>
+
+        <div class="flex flex-col">
+          <a href="#" class="hover:underline">Features</a>
+          <a href="#" class="hover:underline">Pricing</a>
+          <a href="#" class="hover:underline">Privacy Policy</a>
+          <a href="#" class="hover:underline">Terms of Service</a>
+          <a href="#" class="hover:underline">Help Center</a>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="flex gap-5 items-center">
+          <a href="#">
+            <img src="./assets/icon-linkedin.png" alt="" />
+          </a>
+          <a href="#">
+            <img src="./assets/icon-twitter.png" alt="" />
+          </a>
+          <a href="#">
+            <img src="./assets/icon-facebook.png" alt="" />
+          </a>
+          <a href="#">
+            <img src="./assets/icon-youtube.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
